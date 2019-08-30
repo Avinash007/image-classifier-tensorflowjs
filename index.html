@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <!-- Load the latest version of TensorFlow.js -->
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet@2.0.2"></script>
+	<script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
+  </head>
+  <body>
+  
+	<h1> Real Time Image Classifier  </h1>
+	<p> Press the buttons to record individual items such as watch, banana and bottle.
+	I have kept button D for No Action or no item.
+	The model will be trained on this data and show classification on every frame.  </p>
+    <div id="console"></div>
+    <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
+	
+	<button id="class-a">Add A</button>
+	<button id="class-b">Add B</button>
+	<button id="class-c">Add C</button>
+	<button id="class-d">Add D</button>
+
+	<!-- Load index.js after the content of the page -->
+    <script src="index.js"></script>
+  </body>
+</html>
